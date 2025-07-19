@@ -45,6 +45,9 @@ set timeoutlen=500             " Shorten the timeout for mapped sequences
 set updatetime=300             " Faster completion
 
 " Key mappings
+let mapleader = " "
 nnoremap <C-s> :w<CR>          " Map Ctrl+s to save the file
 nnoremap <C-w> :wq<CR>         " Map Ctrl+w to save and quit the file
 inoremap jj <Esc>              " Exit insert mode by typing 'jj'
+vnoremap <leader>y "+y
+nnoremap <leader>Y "+yy
